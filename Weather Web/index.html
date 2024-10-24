@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="header-section container flex">
+            <div class="logo">
+                <img src="weatherlogo.png" alt="">
+            </div>
+
+            <nav class="flex navigation">
+                <a href="index.html">Home</a>
+                <a href="#news">Weather News</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+
+            <div class="inputbar">
+                <form action="#" class="city-search">
+                    <div class="weather-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search Your City..." class="city-namesearch">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main class="main-section">
+
+        <h1 class="weather-city"></h1>
+        <p class="weather-date-time"></p>
+        <p class="weather-forecast"></p>
+        <p class="weather-temp"></p>
+        <div class="temp-minmax flex">
+            <p class="temp-min"></p>
+            <p class="temp-max"></p>
+        </div>
+    </main>
+
+
+
+    <section>
+        <div class="weather-info container ">
+            <div class="weather-card flex">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Feels Like</p>
+                    <p class="weather-feelslike"></p>
+                </div>
+            </div>
+            <div class="weather-card flex">
+                <i class="fa-solid fa-droplet"></i>
+                <div>
+                    <p>Humidity</p>
+                    <p class="weather-humidity"></p>
+                </div>
+            </div>
+            <div class="weather-card flex">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Wind speed</p>
+                    <p class="weather-wind"></p>
+                </div>
+            </div>
+            <div class="weather-card flex">
+                <i class="fa-solid fa-wind"></i>
+                <div>
+                    <p>Wind degree</p>
+                    <p class="weather-winddegree"></p>
+                </div>
+            </div>
+            <div class="weather-card flex">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div>
+                    <p>Pressure</p>
+                    <p class="weather-pressure"></p>
+                </div>
+            </div>
+            <div class="weather-card flex">
+                <i class="fa-solid fa-sun"></i>
+                <div>
+                    <p>Sunrise</p>
+                    <p class="weather-sunrise"></p>
+                </div>
+            </div>
+            <div class="weather-card flex">
+                <i class="fa-solid fa-moon"></i>
+                <div>
+                    <p>Sunset</p>
+                    <p class="weather-sunset"></p>
+                </div>
+            </div>
+            <div class="weather-card flex">
+                <i class="fa-solid fa-eye"></i>
+                <div>
+                    <p>Visibility</p>
+                    <p class="weather-visibility"></p>
+                </div>
+            </div>
+
+            <div class="weather-card flex">
+                <i class="fa-solid fa-cloud"></i>
+                <div>
+                    <p>Cloud Cover</p>
+                    <p class="weather-cloudcover"> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="news">
+        <div class="new-heading container">
+            <h1>Weather News</h1>
+        </div>
+        <div class="news-section">
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-links flex container">
+            <a href="index.html">Home</a>
+            <a href="#news">Weather News</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+
+        <p>&copy; Copyright 2023-24</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="https://kit.fontawesome.com/a18a719ddb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

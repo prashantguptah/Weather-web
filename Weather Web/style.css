@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+body{
+     background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+     
+}
+.flex{
+    display: flex;
+}
+.header-section{
+    align-items: center;
+    justify-content: space-between;
+}
+.header-section .logo img{
+    height: 120px;
+    width: 250px;
+}
+
+input{
+    border: none;
+    box-shadow: 0px 0px 5px grey;
+    padding: 0.7rem 2.4rem;
+    outline: none;
+    border-radius: 30px;
+}
+.weather-search{
+    position: relative;
+}
+form i{
+    position: absolute;
+    top: 12px;
+    left: 11px;
+}
+
+
+/* navigation */
+
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+}
+.navigation a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* main section */
+
+
+.main-section{
+    text-align: center;
+}
+.city-name{
+    margin-top: 1rem;
+}
+.city-date-time{
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+.weather-forecast{
+    padding: 0.5rem 1rem;
+    background-color: #212121;
+    display: inline-block;
+    color: white;
+    border-radius: 30px;
+    margin-block: 10px;
+}
+.weather-temp{
+    font-size: 1.75rem;
+}
+.temp-minmax{
+    justify-content: center;
+}
+.temp-minmax p{
+    font-size: 14px;
+    margin: 0.5rem;
+}
+
+/* weather card */
+
+.weather-info{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+
+}
+.weather-card{
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    background-color: #f7f7f7;
+    color: #000;
+    padding: 0.9rem;
+    border-radius: 10px;
+    animation: swipeup 1s linear forwards;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 5px;
+}
+.weather-card i{
+    margin-right: 1rem;
+}
+.weather-card:hover{
+    transform: scale(1.1);
+}
+
+
+/* news section */
+
+
+.news h1{
+    margin-top: 8rem;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px solid black;
+  
+}
+
+
+.news-section{
+    margin-block: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+
+}
+
+.cards{
+    width: 300px;
+    max-height: 500px;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    animation: swipeup 1s linear forwards;
+    position: relative;
+    
+
+}
+.cards:hover{
+    box-shadow: 2px 5px 5px grey;
+    transform: scale(1.05);
+}
+
+.cards img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 15px;
+    image-resolution: 100% 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    /* border-radius: 30px; */
+}
+.cards p{
+    margin-block: 5px;
+}
+.cards a{
+    
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    background-color: #0486be;
+    padding: 1.1rem 1.3rem;
+    border-radius: 15px;
+    margin-top: 8px;
+
+}
+.cards a:hover{
+    background-color: #5da3c1;
+    animation: shake 0.1s ease-in-out;
+
+}
+@keyframes shake {
+    0%{
+        rotate: 20deg;
+    }
+    50%{
+        rotate: 0;
+    }
+    100%{
+        rotate: -20deg;
+    }
+}
+
+
+/* footer */
+
+
+
+    
+footer{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+   
+
+}
+.footer-links{
+    justify-content: space-around;
+    padding: 1.2rem;
+
+}
+
+.footer-links a{
+  
+   color: white;
+   font-size: 20px;
+   text-decoration: none;
+   border-bottom: 2px solid white;
+   padding: 5px;
+}
+.footer-links a:hover{
+    transform: scale(1.1);
+}
+
+
+
+/* contact section */
+
+.contact-top{
+    display: flex;
+    justify-content: space-between;
+
+}
+.contact-card{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+    transition: all 0.5s ease-in-out;
+   
+}
+.contact-card:hover{
+    transform: scale(1.1);
+}
+.contact-card i{
+    font-size: 40px;
+    margin-block: 15px;
+}
+.contact-card p:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.contact-card p{
+    margin-block: 10px;
+}
+.contact-second{
+    margin-block: 2rem;
+    gap: 20px;
+    
+}
+.contact-left{
+    padding: 30px;
+    background-color: black;
+    width: 50%;
+    color: white;
+    animation: swipeup 1s linear forwards;
+    position: relative;
+}
+
+.contact-right{
+    width: 50%;
+    animation: swipeup 1s linear forwards;
+    position: relative;
+}
+
+.contact-left form div{
+    margin-top: 20px;
+}
+.contact-left form div input{
+    background-color: black;
+    color: white;
+    display: block;
+    border-radius: 0px;
+    margin-top: 8px;
+    width: 100%;
+    padding: 1.2rem 1.2rem;
+}
+
+.contact-left form div textarea{
+   
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    resize: none;
+    margin-top: 5px;
+}
+.contact-left form div button{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+/* about section */
+
+
+.main-box{
+  
+    background-color: white;
+    margin-bottom: 75px;
+    border-radius: 30px;
+    animation: swipeup 1s linear forwards;
+    position: relative;
+   
+
+}
+.img-box{
+  display: flex;
+  justify-content: end;
+
+}
+.main-box img{
+    width: 46vw;
+    height: 50vh;
+    padding: 20px;
+    border-radius: 15px;
+}
+.main-box p{
+    font-size: 2rem;
+    font-weight: bold;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+ 
+
+}
+.about-content{
+    justify-content: space-between;
+    padding: 20px;
+}
+.mid{
+    width: 32%;
+    
+}
+.socials{
+    margin-top: 20px;
+    justify-content: center;
+}
+.socials i{
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+
+@keyframes swipeup {
+    0%{
+      bottom: -50px;
+      left: -50px;
+    }
+    100%{
+        bottom: 0;
+        left: 0;
+    }
+}
